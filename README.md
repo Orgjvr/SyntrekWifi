@@ -101,12 +101,12 @@ Synscan Pro will look for a UDP service running on port 11880. Thus is why we pi
 You need at least SkySafari 5 plus if you want to control the telescope: https://play.google.com/store/apps/details?id=com.simulationcurriculum.skysafari5plus
 Skysafari 5 will not connect directly to SyntrekWifi, but it will connect via Synscan Pro. Thus we first needs to open Synscan Pro and let it connect to the telescope. Then we can connect to it via Skysafari 5.
 The settings in Skysafari 5:
-Under Settings/Telescope/Setup:
-Select "SkyWatcher SynScan" under Scope Type.
-Select your mount type. Mine is: "Alt-Az. GoTo."
-Select the "Connect via WiFi" option.
-At the IP Address enter: 127.0.0.1
-And the Port Number must be 11882.
+- Under Settings/Telescope/Setup:
+  - Select "SkyWatcher SynScan" under Scope Type.
+  - Select your mount type. Mine is: "Alt-Az. GoTo."
+  - Select the "Connect via WiFi" option.
+  - At the IP Address enter: 127.0.0.1
+  - And the Port Number must be 11882.
 
 Now SkySafari 5 will be able to connect to the telescope.
 
@@ -117,3 +117,5 @@ Until someone come around and create this section, you will be on your own. Sorr
 PS: Get a Android phone or table and dedicate it to the telescope :p
 
 ## To do
+- Create a small case
+- Take a picture of the completed project.
