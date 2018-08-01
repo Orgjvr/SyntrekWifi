@@ -87,8 +87,8 @@ Open your browser and enter 192.168.1.4 in the address field. This will connect 
 
 You can change the Wifi SSID to SyntrekWifi or anything else if you want. 
 
-Ensure you reboot the module before trying to set up any further software.
-2
+<b>Ensure you reboot the module before trying to set up any further software.</b>
+
 ### Android
 There is a few options on Android, but I only tried Synscan Pro and Skysafari 5 Plus.
 
