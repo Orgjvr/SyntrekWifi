@@ -20,7 +20,7 @@ The controller on the mount:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/mount-pcb-back.jpg "Back of mount PCB")
 
 Here is a picture of the SynTrek hand control PCB:
-![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/mount-pcb-back.Sytrek-HC-back.jpg "Back of hand control PCB")
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Sytrek-HC-back.jpg "Back of hand control PCB")
 
 The thing that took me the most time to understand was that I did not realise that Synta are connecting the TX and RX lines together and then communicating in a simplex way instead of a normal duplex transmission. This can easily be seen on the picture of the back of the mount PCB, where you can see that pin 3 and 5 are connected together.
 
