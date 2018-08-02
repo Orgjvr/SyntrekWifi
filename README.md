@@ -7,7 +7,7 @@ This is supposed to be a recipe of how to replace the hand control of your Skywa
 Here is a picture of the original Syntrek hand control:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Syntrek-HC.jpg "The old Syntrek hand control")
 
-This modification will also work if you are using a Synscan hand control, as it will also replace the Synscan. If you want to still use the Synscan hand control, I do not have one, so I cannot say if it will work or not. Here is a picture of the Synscan hand controller:
+This modification will also work if you are using a Synscan hand control, as it will also replace the Synscan. If you want to still use the Synscan hand control, I do not have one, so I cannot say if it will work or not. Here is a picture of the Synscan AZ hand controller: 
 
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Synscan-HC.jpg "The old Synscan hand control which can also be replaced")
 
@@ -35,6 +35,15 @@ The thing that took me the most time to understand was that I did not realise th
 Luckily I found a web page of another hacker who reversed engineered the SupaTrak Mount, which is very similar although it uses older PIC microcontrollers: https://sites.google.com/site/rwgastro/other-stuff/supatrakmounthacking
 He also reversed engineer the protocol. You can read more about it in: https://github.com/Orgjvr/SyntrekWifi/blob/master/resources/SupaTrakMountHacking.pdf
 This really helped me with the last step I needed. It seems to be rwg if I read this post: https://stargazerslounge.com/topic/47354-goto-for-skywatcher-flextube-auto-dobs-is-a-reality/?do=findComment&comment=592621 Thanks rwg!
+
+Thus the pin-out of the RJ12 socket on the mount is as follows (with pin 1 being closest to the RJ45 connector):
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/rj12.png "RJ12 Pin numbers")
+- Pin 1: Flow control line. We are not using it.
+- Pin 2: GND - Ground
+- Pin 3: Data - Both TX and RX connected.
+- Pin 4: Vin - This is the power supplied to the mount. Thus if 12V battery is used, then this will be 12V.
+- Pin 5: Data - Both TX and RX connected.
+- Pin 6: NC - Not connected
 
 Skywatcher has also open sourced their API: https://github.com/skywatcher-pacific/skywatcher_open
 Thanks Skywatcher! We really appreciate it.
@@ -121,11 +130,16 @@ The settings in Skysafari 5:
 
 Now SkySafari 5 will be able to connect to the telescope. 
 
-
 ### IOS
 Until someone come around and create this section, you will be on your own. Sorry.
 
 PS: Get a Android phone or table and dedicate it to the telescope :p
+
+### Linux
+I planned on controlling the telescope from my Linux laptop, but the Android control is working so nicely, that I am not sure whether I will investigate this anymore. Please let me know if you want to do a writeup for this.
+
+### Windows
+Until someone come around and create this section, you will be on your own. Sorry.
 
 ## To do
 - Create a small case
