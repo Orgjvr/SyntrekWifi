@@ -4,6 +4,10 @@ A Wifi interface to replace your Syntrek hand control. This can then be used by 
 ## Introduction
 This is supposed to be a recipe of how to replace the hand control of your Skywatcher dobsonian telescope with a Wifi module. This will allow you to control the telescope from your Android phone and have goto as well as tracking abilities.
 
+Here is a picture of the new SyntrekWifi module connected to my telescope:
+
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Completed.png "The new SyntrekWifi on my telescope")
+
 Here is a picture of the original Syntrek hand control:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Syntrek-HC.jpg "The old Syntrek hand control")
 
@@ -91,9 +95,14 @@ Connects RXD and TXD on the TTL-Wifi module to the cable from the mount to pin 3
 
 #### Step 6
 Put everything in a nice plastic container, and take precaution that nothing will create a short circuit.
+Here is a picture of the modules inside a box. Note that the PSU module is fixed to the side with a screw:
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/InBox.jpg "Picture of the modules inside a box")
+
+And here you can see how I insulated the TTL-Wifi module so that it will not create any shorts.
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/InBoxInsulated.jpg "Insulated TTL-Wifi module")
 
 #### Step 7
-Congratulations! You are done with the hardware. Now you can remove the hand controller from the mount and replace it with the new Wifi module. Power the telescope. Now we need to do a few settings on the TTL-Wifi module.
+Congratulations! You are done with the hardware. Now you can remove the hand controller from the mount and replace it with the new Wifi module. Power the telescope. Now we need to do a few settings on the TTL-Wifi module. 
 
 ## Lets try to use it!
 ### Setup TTL-Wifi module
@@ -142,5 +151,4 @@ I planned on controlling the telescope from my Linux laptop, but the Android con
 Until someone come around and create this section, you will be on your own. Sorry.
 
 ## To do
-- Create a small case
-- Take a picture of the completed project.
+- A writeup for if you want to use Bluetooth instead of Wifi. An HC-06 module can directly replace 
