@@ -7,7 +7,8 @@ This is supposed to be a recipe of how to replace the hand control of your Skywa
 Here is a picture of the original Syntrek hand control:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Syntrek-HC.jpg "The old Syntrek hand control")
 
-This modification will also work if you are using a Synscan hand control, as it will also replace the Synscan. If you want to still use the Synscan hand control, I do not have one, so I cannot say if it will work or not. Here is a picture of the Synscan hand controller: 
+This modification will also work if you are using a Synscan hand control, as it will also replace the Synscan. If you want to still use the Synscan hand control, I do not have one, so I cannot say if it will work or not. Here is a picture of the Synscan hand controller:
+
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Synscan-HC.jpg "The old Synscan hand control which can also be replaced")
 
 Here is a picture of the new SyntrekWifi before it was enclosed in a case:
