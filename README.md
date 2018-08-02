@@ -3,14 +3,21 @@ A Wifi interface to replace your Syntrek hand control. This can then be used by 
 
 ## Introduction
 This is supposed to be a recipe of how to replace the hand control of your Skywatcher dobsonian telescope with a Wifi module. This will allow you to control the telescope from your Android phone and have goto as well as tracking abilities.
-Here is picture of the SyntrekWifi before it was enclosed in a case:
+
+Here is a picture of the original Syntrek hand control:
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Syntrek-HC.jpg "The old Syntrek hand control")
+
+This modification will also work if you are using a Synscan hand control, as it will also replace the Synscan. If you want to still use the Synscan hand control, I do not have one, so I cannot say if it will work or not. Here is a picture of the Synscan hand controller: 
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Synscan-HC.jpg "The old Synscan hand control which can also be replaced")
+
+Here is a picture of the new SyntrekWifi before it was enclosed in a case:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/SyntrekWifi-front-no-case.jpg "Front of our new SyntrekWifi module")
 
 ## CAUTION
-<b>Please note that I do not take responsibility for anything that happens. This is a document for my own use, to remind me of the steps I have taken to get my telescop working.</b>
+<b>Please note that I do not take responsibility for anything that happens. This is a document for my own use, to remind me of the steps I have taken to get my telescope working.</b>
 
 ## Background
-<b>Note: You can skip this section if you want to dive in heaad first!</B>
+<b>Note: You can skip this section if you want to dive in head first and just follow the steps!</B>
 
 I searched a lot on the internet, and found many people who automated the Skywatcher equitorial mounts, and some who automated their dobsonian mounts via a synscan controller, but none who automated their dobsonian without a Synscan controller.
 
@@ -20,7 +27,7 @@ The controller on the mount:
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/mount-pcb-back.jpg "Back of mount PCB")
 
 Here is a picture of the SynTrek hand control PCB:
-![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Sytrek-HC-back.jpg "Back of hand control PCB")
+![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/Syntrek-HC-back.jpg "Back of hand control PCB")
 
 The thing that took me the most time to understand was that I did not realise that Synta are connecting the TX and RX lines together and then communicating in a simplex way instead of a normal duplex transmission. This can easily be seen on the picture of the back of the mount PCB, where you can see that pin 3 and 5 are connected together.
 
@@ -60,6 +67,7 @@ Before we blow anything up, we need to set the output of the PowerSupply module 
 
 #### Step 2
 Crimp the RJ12 connector to the wire. See the picture below to understand the pin numbering I am using further on in this instructions: 
+
 ![alt text](https://github.com/Orgjvr/SyntrekWifi/blob/master/pics/rj12.png "RJ12 Pin numbers")
 
 #### Step 3
@@ -97,6 +105,8 @@ Synscan Pro can be downloaded from the Google Play store: https://play.google.co
 
 Synscan Pro will look for a UDP service running on port 11880. Thus is why we picked these settings above. Currently this cannot be changed in Synscan Pro version 1.9.0.
 
+One thing that I picked up, is that if I manually move the telescope, then Syncan Pro will not show the new direction in which it is pointing, until you click on the refresh button. I think this is a limitation of the software on the mount PCB. I need to still hook it up to the oscilloscope to test this.
+
 #### Skysafari 5
 You need at least SkySafari 5 plus if you want to control the telescope: https://play.google.com/store/apps/details?id=com.simulationcurriculum.skysafari5plus
 Skysafari 5 will not connect directly to SyntrekWifi, but it will connect via Synscan Pro. Thus we first needs to open Synscan Pro and let it connect to the telescope. Then we can connect to it via Skysafari 5.
@@ -108,7 +118,7 @@ The settings in Skysafari 5:
   - At the IP Address enter: 127.0.0.1
   - And the Port Number must be 11882.
 
-Now SkySafari 5 will be able to connect to the telescope.
+Now SkySafari 5 will be able to connect to the telescope. 
 
 
 ### IOS
