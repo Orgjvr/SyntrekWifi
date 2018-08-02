@@ -1,4 +1,3 @@
-
 # SyntrekWifi
 A Wifi interface to replace your Syntrek hand control. This can then be used by other applications to control your telescope.
 
